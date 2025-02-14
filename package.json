@@ -14,20 +14,26 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "breakpoints": [
+      {
+        "language": "lua"
+      }
+    ],
+    "languages": [
+      {
+        "id": "lua",
+        "extensions": [
+          ".lua"
+        ],
+        "aliases": [
+          "Lua"
+        ]
+      }
+    ],
     "debuggers": [
       {
         "type": "luadap",
         "label": "Lua DAP server",
-        "languages": [{
-            "id": "lua",
-            "extensions": [
-              ".lua"
-            ],
-            "aliases": [
-              "Lua"
-            ]
-          }
-        ],
         "configurationAttributes": {
           "attach": {
             "properties": {
